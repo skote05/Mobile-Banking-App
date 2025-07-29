@@ -11,7 +11,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import api from '../services/api';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
-import { useNavigation } from '../../node_modules/@react-navigation/native/lib/typescript/src';
+import { useNavigation } from '@react-navigation/native';
 import KeyboardSafeView from '../components/KeyboardSafeView';
 import { GlobalStyles, Colors, Typography, Spacing } from '../styles/GlobalStyles';
 

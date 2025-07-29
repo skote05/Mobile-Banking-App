@@ -8,7 +8,7 @@ import {
   SafeAreaView,
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { useNavigation } from '../../node_modules/@react-navigation/native/lib/typescript/src';
+import { useNavigation } from '@react-navigation/native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Ionicons } from '@expo/vector-icons';
 import { GlobalStyles, Colors, Typography, Spacing } from '../styles/GlobalStyles';
@@ -32,21 +32,21 @@ const DashboardScreen = () => {
       id: '1', 
       title: 'Transfer', 
       icon: 'swap-horizontal-outline', 
-      color: '#4a69bd', 
+      color: '#0c2461', 
       onPress: () => navigation.navigate('FundTransfer') 
     },
     { 
       id: '2', 
       title: 'QR Pay', 
       icon: 'qr-code-outline', 
-      color: '#6a89cc', 
+      color: '#0c2461', 
       onPress: () => navigation.navigate('ScanQR') 
     },
     { 
       id: '3', 
       title: 'Accounts', 
       icon: 'card-outline', 
-      color: '#1e3799', 
+      color: '#0c2461', 
       onPress: () => navigation.navigate('Accounts') 
     },
     { 
@@ -85,7 +85,7 @@ const DashboardScreen = () => {
         <View style={GlobalStyles.header}>
           <View style={styles.headerContent}>
             <Text style={styles.greetingText}>Hello,</Text>
-            <Text style={styles.headerText}>{username || 'User'} 👋</Text>
+            <Text style={styles.headerText}>{username || 'User'}</Text>
             <Text style={styles.subtitleText}>Welcome to your banking dashboard</Text>
           </View>
         </View>
@@ -134,6 +134,8 @@ const DashboardScreen = () => {
 const styles = {
   headerContent: {
     alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: 50,
   },
   greetingText: {
     fontSize: Typography.lg,

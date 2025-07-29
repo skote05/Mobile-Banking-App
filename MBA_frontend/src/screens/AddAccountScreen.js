@@ -8,7 +8,7 @@ import {
   StyleSheet,
   StatusBar,
 } from 'react-native';
-import { useNavigation } from '../../node_modules/@react-navigation/native/lib/typescript/src';
+import { useNavigation } from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Ionicons } from '@expo/vector-icons';

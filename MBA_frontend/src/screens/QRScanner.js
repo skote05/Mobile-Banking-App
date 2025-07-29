@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, Button, StyleSheet, TouchableOpacity, Alert } from 'react-native';
 import { CameraView, useCameraPermissions } from 'expo-camera';
-import { useNavigation } from '../../node_modules/@react-navigation/native/lib/typescript/src';
+import { useNavigation } from '@react-navigation/native';
 import api from '../services/api';
 
 const QRScanner = () => {

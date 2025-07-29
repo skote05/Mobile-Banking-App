@@ -1,7 +1,7 @@
 import React from 'react';
-import { NavigationContainer } from '../../node_modules/@react-navigation/native/lib/typescript/src';
-import { createStackNavigator } from '../../node_modules/@react-navigation/stack/lib/typescript/src';
-import { createDrawerNavigator, DrawerContentScrollView, DrawerItemList } from '../../node_modules/@react-navigation/drawer/lib/typescript/src';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { createDrawerNavigator, DrawerContentScrollView, DrawerItemList } from '@react-navigation/drawer';
 import { View, Text, StyleSheet, TouchableOpacity, Alert } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import AsyncStorage from '@react-native-async-storage/async-storage';

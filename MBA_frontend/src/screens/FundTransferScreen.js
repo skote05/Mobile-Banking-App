@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StatusBar, SafeAreaView } from 'react-native';
-import { useNavigation } from '../../node_modules/@react-navigation/native/lib/typescript/src';
+import { useNavigation } from '@react-navigation/native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Ionicons } from '@expo/vector-icons';
 import { GlobalStyles, Colors, Typography, Spacing } from '../styles/GlobalStyles';
